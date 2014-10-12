@@ -6,6 +6,9 @@ public class Calculator {
 		if(text.equals("")){
 			return 0;
 		}
+		else if (!isNumber(splitNumbers(text))){
+			return 
+		}
 		else if(text.contains(",")){
 			return sum(splitNumbers(text));
 		}
@@ -28,7 +31,5 @@ public class Calculator {
 		}
 		return total;
     }
-
-
 
 }
