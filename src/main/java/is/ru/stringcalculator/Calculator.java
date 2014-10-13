@@ -5,10 +5,10 @@ public class Calculator {
 	public static int add(String text){
 		if(text.equals("")){
 			return 0;
-		}
-		else if (!isNumber(splitNumbers(text))){
-			return 
-		}
+		}/*
+		else if (text.contains(",") && text.contains("\n")){
+			return sum(splitNumbers(replaceNewLine(text)));
+		}*/
 		else if(text.contains(",")){
 			return sum(splitNumbers(text));
 		}
@@ -31,5 +31,8 @@ public class Calculator {
 		}
 		return total;
     }
-
+    /*
+    private static String [] replaceNewline(String [] numbers){
+    	return numbers.replaceAll("\n", ",");
+    }*/
 }
